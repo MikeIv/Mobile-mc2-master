@@ -1,0 +1,316 @@
+/*--- step1-modal_company-info ---*/
+.step1-modal_company-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+
+  background-color: #EBEBEB;
+
+  z-index: 10;
+}
+
+
+.step1-modal_company-info__head {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 48px;
+
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(180deg, #208DEC 0%, #0D79D6 100%);
+  z-index: 10;
+}
+
+.step1-modal_company-info__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1px;
+  box-sizing: border-box;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+
+.step1-modal_company-info__head-close {
+  flex: none;
+
+  width: 48px;
+  height: 48px;
+
+  background-color: #0462B4;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 14.1629L14.0907 0L16 1.83714L1.90928 16L0 14.1629Z' clip-rule='evenodd' fill='%23fff' fill-rule='evenodd'/%3E%3Cpath d='m1.9093 2.397e-4 14.091 14.163-1.9093 1.8372-14.091-14.163 1.9093-1.8372z' clip-rule='evenodd' fill='%23fff' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+}
+
+
+/*--- block ---*/
+.step1-modal_company-info__block {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  margin-top: 48px;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+
+  background-color: #FFFFFF;
+}
+
+.step1-modal_company-info__top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  min-height: 120px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.step1-modal_company-info__head-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 46px;
+
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.step1-modal_company-info__title-txt {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.step1-modal_company-info__title-txt--mb {
+  margin-bottom: 8px;
+}
+
+.step1-modal_company-info__title-txt--color {
+  color: #0F7EE6;
+}
+
+
+/*--- list ---*/
+
+.step1-modal_company-info__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+  min-height: 40px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.step1-modal_company-info__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 40px;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 48px;
+  box-sizing: border-box;
+
+  background-color: #0462B4;
+  border-bottom: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+
+.step1-modal_company-info__item--active {
+  background-color: #0F7EE6;
+}
+
+.step1-modal_company-info__item-title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.step1-modal_company-info__item::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 16px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("/img/modal-icon-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.step1-modal_company-info__item--active::before {
+  transform: rotate(180deg);
+}
+
+
+/*-- subitem ---*/
+.step1-modal_company-info__item-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.step1-modal_company-info__subitem {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.step1-modal_company-info__item--active ~ .step1-modal_company-info__subitem {
+  display: flex;
+}
+
+.step1-modal_company-info__subitem-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 246px;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 3px;
+}
+
+
+.step1-modal_company-info__subitem-row {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 52px;
+
+  border-bottom: 1px solid #C4C4C4;
+  box-sizing: border-box;
+}
+
+.step1-modal_company-info__subitem-line {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.step1-modal_company-info__subitem-title {
+  width: 250px;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.step1-modal_company-info__subitem-title-right-col {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+
+.step1-modal_company-info__subitem-txt-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.step1-modal_company-info__subitem-txt {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}

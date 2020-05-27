@@ -1,0 +1,186 @@
+.m_preloader-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 100vh;
+
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+.m_preloader-search__timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 106px;
+
+  margin: 0;
+  margin-left: auto;
+  margin-bottom: 8px;
+  padding: 0;
+
+
+}
+
+.m_preloader-search__timer-txt {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  color: #034074;
+}
+
+.m_preloader-search__timer-txt--bold {
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.m_preloader-search__img-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 60px;
+
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+@keyframes m_preloader-search__img-animation {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.m_preloader-search__img {
+  width: 60px;
+  height: 60px;
+
+  margin: 0;
+  padding: 0;
+
+  -webkit-animation: m_preloader-search__img-animation 1s infinite steps(20);
+  animation: m_preloader-search__img-animation 1s infinite steps(20);
+  transform-origin: center;
+}
+
+
+.m_preloader-search__head {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+
+  width: 100%;
+
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 22px;
+  color: #034074;
+}
+
+.m_preloader-search__line-search {
+  margin: 0 auto;
+  margin-bottom: 48px;
+  padding: 0;
+}
+
+.m_preloader-search__line-search-animation {
+  width: 85px;
+  height: 3px;
+
+  background-image: url("../images/dots.gif");
+  background-repeat: no-repeat;
+}
+
+
+
+
+.m_preloader-search__h2 {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+
+  width: 100%;
+
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.m_preloader-search__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.m_preloader-search__item {
+  position: relative;
+  width: 100%;
+
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  padding-left: 48px;
+  box-sizing: border-box;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.m_preloader-search__item::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 0;
+
+  background-repeat: no-repeat;
+}
+
+.m_preloader-search__item--logistic::before {
+  width: 36px;
+  height: 36px;
+
+  background-image: url("/img/icon-logistic.svg");
+}
+
+.m_preloader-search__item--sales::before {
+  width: 32px;
+  height: 20px;
+
+  background-image: url("/img/icon-sales.svg");
+}
+
+.m_preloader-search__item--services::before {
+  width: 38px;
+  height: 36px;
+
+  background-image: url("/img/icon-services.svg");
+}

@@ -1,0 +1,1253 @@
+.m_step-1_cruise-avia-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color: #FFFFFF;
+
+  z-index: 11;
+}
+
+
+.m_step-1_cruise-avia-info__head {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 48px;
+
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(180deg, #208DEC 0%, #0D79D6 100%);
+  z-index: 10;
+}
+
+.m_step-1_cruise-avia-info__head-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background-image: url("/img/cruise-avia.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.m_step-1_cruise-avia-info__head-close {
+  flex: none;
+
+  width: 48px;
+  height: 48px;
+
+  background-color: #0462B4;
+  background-image: url("/img/icon-arrow-extend.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+
+  cursor: pointer;
+}
+
+
+/*--- main block ---*/
+.m_step-1_cruise-avia-info__main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  margin-top: 48px;
+  padding: 0;
+  padding-top: 16px;
+  box-sizing: border-box;
+
+  background-color: #FFFFFF;
+}
+
+.m_step-1_cruise-avia-info__title {
+  width: 100%;
+
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #0F7EE6;
+}
+
+.m_step-1_cruise-avia-info__title-pax {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.m_step-1_cruise-avia-info__cost {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 23px;
+
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+
+}
+
+.m_step-1_cruise-avia-info__cost-txt {
+  position: relative;
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+  padding-left: 20px;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__cost-txt--cruise::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 18px;
+  height: 16px;
+
+  background-image: url("/img/icon-cruise.svg");
+}
+
+.m_step-1_cruise-avia-info__cost-txt--flight::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("/img/icon-flight.svg");
+}
+
+.m_step-1_cruise-avia-info__cost-sum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+
+  height: 100%;
+
+  margin: 0;
+  margin-left: 8px;
+  padding: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #0F7EE6;
+
+  border: 1px solid #0F7EE6;
+}
+
+/*--- cruise block --*/
+.m_step-1_cruise-avia-info__cruise-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.m_step-1_cruise-avia-info__cruise-title {
+  width: 100%;
+
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #1A459C;
+}
+
+.m_step-1_cruise-avia-info__cruise-txt {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__cruise-txt--bold {
+  font-weight: bold;
+}
+
+.m_step-1_cruise-avia-info__cruise-txt--mb {
+  margin-bottom: 8px;
+}
+
+.m_step-1_cruise-avia-info__cruise-txt--mb-l {
+  margin-bottom: 14px;
+}
+
+
+.m_step-1_cruise-avia-info__cruise-item {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 18px;
+
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__cruise-item--mr {
+  margin-right: 8px;
+}
+
+.m_step-1_cruise-avia-info__cruise-item--width {
+  width: 120px;
+}
+
+.m_step-1_cruise-avia-info__cruise-item--link {
+  color: #0F7EE6;
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.m_step-1_cruise-avia-info__cruise-item--time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 43px;
+  height: 18px;
+
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+}
+
+.m_step-1_cruise-avia-info__cruise-item--data {
+  font-weight: bold;
+}
+
+
+.m_step-1_cruise-avia-info__cruise-line {
+
+}
+
+
+/*--- fly block ---*/
+.m_step-1_cruise-avia-info__fly-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+  padding-top: 24px;
+  box-sizing: border-box;
+
+  border-top: 1px solid #C4C4C4;
+}
+
+.m_step-1_cruise-avia-info__fly-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 24px;
+
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__fly-title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #1A459C;
+}
+
+.m_step-1_cruise-avia-info__fly-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 128px;
+  height: 24px;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 13px;
+  color: #1A459C;
+
+  border: 1px solid #1A459C;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+}
+
+.m_step-1_cruise-avia-info__fly-item {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__fly-item-txt {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #1A459C;
+}
+
+.m_step-1_cruise-avia-info__fly-item-txt--up {
+  text-transform: uppercase;
+}
+
+.m_step-1_cruise-avia-info__fly-item-txt--pl {
+  padding-left: 28px;
+}
+
+.m_step-1_cruise-avia-info__fly-item-txt--color {
+  color: #0F7EE6;
+}
+
+.m_step-1_cruise-avia-info__fly-item-txt--icon::before {
+  position: absolute;
+  content: "";
+  top: -1px;
+  left: 8px;
+
+  width: 16px;
+  height: 16px;
+
+  margin: 0;
+  padding: 0;
+
+  background-image: url("/img/icon-clock.svg");
+}
+
+.m_step-1_cruise-avia-info__fly-item-txt--icon::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -18px;
+
+  width: 14px;
+  height: 14px;
+
+  margin: 0;
+  padding: 0;
+
+  background-image: url("/img/icon-question-fly.svg");
+}
+
+/*--- fly data block ---*/
+.m_step-1_cruise-avia-info__fly-data-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+  min-height: 100px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__fly-data-block--pt {
+  padding-top: 14px;
+}
+
+.m_step-1_cruise-avia-info__fly-data-header {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 32px;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+
+  background-color: #1A459C;
+  box-shadow: inset 0px 1px 0px #D1D1D1, inset 0px -1px 0px #D1D1D1;
+}
+
+.m_step-1_cruise-avia-info__fly-data-header-txt {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.m_step-1_cruise-avia-info__fly-data-header-txt--pl {
+  padding-left: 28px;
+}
+
+.m_step-1_cruise-avia-info__fly-data-header-txt--out::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  right: -28px;
+
+  width: 20px;
+  height: 9px;
+
+  margin: 0;
+  padding: 0;
+
+  background-image: url("/img/icon-arrow-fly-out.svg");
+}
+
+.m_step-1_cruise-avia-info__fly-data-header-txt--back::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 0;
+
+  width: 20px;
+  height: 9px;
+
+  margin: 0;
+  padding: 0;
+
+  background-image: url("/img/icon-arrow-fly-out.svg");
+  transform: rotate(180deg);
+}
+
+.m_step-1_cruise-avia-info__fly-destination-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 56px;
+  padding-right: 16px;
+  box-sizing: border-box;
+
+  background-color: #FFFFFF;
+}
+
+.m_step-1_cruise-avia-info__fly-destination-block::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 12px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("/img/icon-flight-fly.svg");
+}
+
+.m_step-1_cruise-avia-info__fly-destination-item {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__fly-destination-item--mb {
+  margin-bottom: 4px;
+}
+
+.m_step-1_cruise-avia-info__fly-destination-item--bold {
+  margin-right: 4px;
+  font-weight: bold;
+}
+
+.m_step-1_cruise-avia-info__fly-destination-item--arrow {
+  width: 16px;
+  height: 4px;
+
+  margin: 0;
+  margin-left: 8px;
+  padding: 0;
+  padding-bottom: 7px;
+  box-sizing: border-box;
+
+  background-image: url("/img/icon-arrow-fly-to.svg");
+  background-repeat: no-repeat;
+}
+
+
+/*--- flight block ---*/
+.m_step-1_cruise-avia-info__flight-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 136px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+
+  background: linear-gradient(180deg, #F3F3F3 0%, #FFFFFF 100%);
+  box-shadow: inset 0px 1px 0px #D1D1D1;
+}
+
+.m_step-1_cruise-avia-info__flight-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 67%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__flight-item {
+  display: flex;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__flight-item--mb {
+  margin-bottom: 16px;
+}
+
+.m_step-1_cruise-avia-info__flight-col-left {
+  width: 40px;
+}
+
+.m_step-1_cruise-avia-info__flight-col-right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.m_step-1_cruise-avia-info__flight-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  width: 33%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__flight-airline {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__flight-airline-logo {
+  flex: none;
+
+  width: 32px;
+  height: 32px;
+
+  margin: 0;
+  margin-right: 8px;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__flight-airline-name {
+  display: flex;
+  flex-shrink: 1;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__flight-airline-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__flight-airline-data-txt {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__flight-airline-data-txt--color {
+  margin-top: 3px;
+  color: #FF0000;
+}
+
+
+.m_step-1_cruise-avia-info__flight-line {
+  width: 100%;
+
+  margin: 0;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__flight-txt {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__flight-txt--bold {
+  font-weight: bold;
+}
+
+.m_step-1_cruise-avia-info__flight-txt--up {
+  text-transform: uppercase;
+}
+
+
+/*--- transfer block ---*/
+.m_step-1_cruise-avia-info__transfer-block {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 48px;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+
+  background: #E6E6E6;
+  box-shadow: inset 0px 1px 0px #D1D1D1;
+}
+
+.m_step-1_cruise-avia-info__transfer-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 107px;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__transfer-right {
+  display: flex;
+  flex-grow: 1;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__transfer-txt {
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__transfer-txt--bold {
+  padding-top: 2px;
+  font-weight: bold;
+}
+
+.m_step-1_cruise-avia-info__transfer-txt--color {
+  color: #0F7EE6;
+}
+
+
+/*--- fly info add ---*/
+
+.m_step-1_cruise-avia-info__fly-info-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 56px;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+
+  background-color: #FFFFFF;
+  box-shadow: inset 0px -1px 0px #D1D1D1, inset 0px 1px 0px #D1D1D1;
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-list {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-list--mb {
+  margin-bottom: 8px;
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-txt {
+  position: relative;
+
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  padding-left: 20px;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 13px;
+  color: #4EA9FF;
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-txt--color {
+  color: #0F7EE6;
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-txt--mr {
+  margin-right: auto;
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-txt--luggage::before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: 0;
+
+  width: 12px;
+  height: 16px;
+
+  background-image: url("/img/icon-luggage.svg");
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-txt--carry::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+
+  width: 16px;
+  height: 14px;
+
+  background-image: url("/img/icon-carry.svg");
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-txt--change::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 13px;
+  height: 13px;
+
+  background-image: url("/img/icon-change.svg");
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-txt--return::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 13px;
+  height: 13px;
+
+  background-image: url("/img/icon-return.svg");
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-type {
+  width: 80px;
+  height: 16px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-type--chart {
+  background-image: url("/img/fly-chart.svg");
+}
+
+.m_step-1_cruise-avia-info__fly-info-add-type--loucost {
+  background-image: url("/img/fly-loucost.svg");
+}
+
+
+.m_step-1_cruise-avia-info__before-cruise {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 32px;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+
+  background: #F8F8F8;
+  box-shadow: inset 0px -1px 0px #D1D1D1;
+}
+
+.m_step-1_cruise-avia-info__before-cruise-txt {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 13px;
+  color: #4BB540;
+}
+
+.m_step-1_cruise-avia-info__before-cruise-txt--color {
+  color: #0F7EE6;
+}
+
+
+/*--- rate block ---*/
+.m_step-1_cruise-avia-info__rate-block {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.m_step-1_cruise-avia-info__rate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 32px;
+
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.m_step-1_cruise-avia-info__rate-header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 140px;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__rate-header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.m_step-1_cruise-avia-info__rate-header-txt {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__rate-header-txt--link {
+  padding-right: 10px;
+  color: #0F7EE6;
+  text-decoration: underline;
+}
+
+
+.m_step-1_cruise-avia-info__rate-list-block {
+  position: relative;
+  display: block;
+
+  width: 100%;
+  height: 360px;
+
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.m_step-1_cruise-avia-info__rate-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: flex-end;
+
+  width: 1000px;
+  height: 360px;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 12px;
+}
+
+
+.m_step-1_cruise-avia-info__rate-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 248px;
+  height: 320px;
+  margin: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border: 2px dotted #51a4ff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.m_step-1_cruise-avia-info__rate-item:hover {
+  background-color: #F3F3F3;
+}
+
+.m_step-1_cruise-avia-info__rate-item--active {
+  min-height: 337px;
+  border: 1px solid #1481de;
+  background: linear-gradient(0deg, #F3F3F3 20.45%, #FFFFFF 100%);
+}
+
+.m_step-1_cruise-avia-info__rate-item--active::before {
+  position: absolute;
+  content: "";
+  top: -15px;
+  left: 106px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: #FFFFFF;
+  transform: rotate(45deg);
+  border-left: 1px solid #1481de;
+  border-top: 1px solid #1481de;
+  clip-path: polygon(0 100%, 100% 0, 0 0);
+  border-radius: 4px;
+}
+
+.m_step-1_cruise-avia-info__rate-item-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: auto;
+}
+
+.m_step-1_cruise-avia-info__rate-gauge {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  box-shadow: 0px 0px 0px 1px #8F8F8F inset, 0px 0px 0px 4px #FFFFFF inset, 0px 0px 0px 5px #CACACA inset;
+  border-radius: 20px;
+}
+
+.m_step-1_cruise-avia-info__rate-head {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__rate-price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1481de;
+}
+
+.m_step-1_cruise-avia-info__rate-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 24px;
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.m_step-1_cruise-avia-info__rate-row--bb {
+  border-bottom: none;
+}
+
+.m_step-1_cruise-avia-info__rate-col-item {
+  display: flex;
+  align-items: flex-start;
+  width: 110px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+}
+
+.m_step-1_cruise-avia-info__rate-col-date {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.m_step-1_cruise-avia-info__rate-col-date--size {
+  font-size: 13px;
+}
+
+.m_step-1_cruise-avia-info__rate-col-date--active {
+  font-weight: bold;
+  color: #FF0000;
+}
+
+.m_step-1_cruise-avia-info__rate-rules {
+  display: flex;
+  justify-content: center;
+  width: 130px;
+  margin: 0;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 14px;
+  color: #0F7EE6;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.m_step-1_cruise-avia-info__rate-rules:hover {
+  background-color: #cbebfa;
+}
+
+/*--- модификаторы свойств при активном состоянии карточки ---*/
+.m_step-1_cruise-avia-info__rate-item.m_step-1_cruise-avia-info__rate-item--active .m_step-1_cruise-avia-info__rate-gauge {
+  box-shadow: 0px 0px 0px 1px #CACACA inset, 0px 0px 0px 3px #FFFFFF inset;
+  background-color: #FF0000;
+}
+
+.m_step-1_cruise-avia-info__rate-item.m_step-1_cruise-avia-info__rate-item--active .m_step-1_cruise-avia-info__rate-price {
+  font-size: 16px;
+  color: #FF0000;
+}
+
+
+.m_step-1_cruise-avia-info__rate-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 152px;
+  height: 40px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  background-color: #F48F2E;
+  border-radius: 3px;
+
+  cursor: pointer;
+}
